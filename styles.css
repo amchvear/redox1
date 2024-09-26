@@ -1,0 +1,178 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #007BFF, #00d2ff);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffdf00;
+}
+
+section {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    max-width: 1200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+}
+
+h2 {
+    color: #007BFF;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h2:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background-color: #ffdf00;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    background: linear-gradient(135deg, #007BFF, #00d2ff);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+ul li:hover {
+    background: linear-gradient(135deg, #ffdf00, #ff8800);
+    transform: scale(1.05);
+}
+
+/* Team Section */
+#team ul li {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+#team ul li:hover {
+    background: linear-gradient(135deg, #ffdf00, #f54ea2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 30px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    ul li {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+}
+
+/* Button Styling (Optional for Future Use) */
+button {
+    background: linear-gradient(135deg, #00d2ff, #007BFF);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ffdf00, #ff8800);
+    transform: scale(1.05);
+}
